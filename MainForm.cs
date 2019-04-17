@@ -21,7 +21,7 @@ namespace devhost
 	{
         string path = @"C:\windows\system32\drivers\etc\hosts.1.txt";
         string hostFilepath = @"C:\windows\system32\drivers\etc\hosts"; // actual winsock host file
-		public MainForm()
+public MainForm()
 		{
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
@@ -56,7 +56,7 @@ namespace devhost
 
 
 
-		void BtnWriteDataClick(object sender, EventArgs e)
+void BtnWriteDataClick(object sender, EventArgs e)
 		{
 	      
 		 	
@@ -97,8 +97,11 @@ namespace devhost
 			
 			
 			
-		}
-		void Button1Click(object sender, EventArgs e)
+      }
+		
+		
+		
+void Button1Click(object sender, EventArgs e)
 		{
 			String L = "";
 			 var allLines = File.ReadAllLines(hostFilepath);
